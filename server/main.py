@@ -8,7 +8,6 @@ app = FastAPI()
 
 app.include_router(core.router)
 app.include_router(tests.router)
-app.mount("/", StaticFiles(directory="./server/public"), "public")
 
 
 def main():
